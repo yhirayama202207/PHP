@@ -35,6 +35,6 @@ echo 'welcome';
 
 //変数（頭に$をつけることによって定義する $変数名 = 値;
 <?php
- $name = 'Mark'; //右辺'Mark'を$nameに代入する
+ $name = 'Mark'; //右辺'Mark'を変数$nameに代入する
  echo $name; //結果: Mark
 ?>
