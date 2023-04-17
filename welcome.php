@@ -33,8 +33,14 @@ echo 'welcome';
  echo "3 + 5"; //結果: 3 + 5（文字列）
 ?>
 
+
 //変数（頭に$をつけることによって定義する $変数名 = 値;
 <?php
  $name = 'Mark'; //右辺'Mark'を変数$nameに代入する
  echo $name; //結果: Mark
 ?>
+
+//正方形の面積を計算
+$length = 5;
+$area = $length * $length;
+echo $area; //結果: 25
