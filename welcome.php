@@ -40,6 +40,11 @@ echo 'welcome';
  echo $name; //結果: Mark
 ?>
 
+<?php
+ $sum = 5 + 3;
+ echo $sum; //結果: 8
+?>
+
 //正方形の面積を計算
 $length = 5;
 $area = $length * $length;
@@ -48,3 +53,4 @@ echo $area; //結果: 25
 //PHPでの変数名の付け方
 $name //◎英単語を用いる（×数字開始はエラーの原因となる。△ローマ字や日本語は避ける）
 $totalAmount //◎2語以上の場合は大文字で区切る
+
