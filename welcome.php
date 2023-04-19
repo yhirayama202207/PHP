@@ -84,3 +84,15 @@ $x = 5;
 $y = 5;
 echo ++$x; //結果: 6（echoの前に+1される）
 echo $y++; //結果: 5（echoの後に+1される）
+
+
+//文字列の連結（.を用いる→文字列同士の連結、変数と文字列の連結、変数同士の連結が可能）
+$language = 'PHP';
+echo $language.'基礎'; //結果: PHP基礎
+
+$stage = '基礎'
+echo $language.$stage; //結果: PHP基礎
+
+$name = '田中';
+$name .= '太郎'; //（$name=$name.'太郎';と同じ意味）
+echo $name; //結果: 田中太郎
