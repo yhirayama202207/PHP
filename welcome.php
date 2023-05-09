@@ -187,11 +187,28 @@ switch ($coin) {
  case 0:
   echo '表';
   break;            　　　　　 //caseブロックの最後にはbreak命令を指定する。（break命令がないと後ろに続くcaseブロックが続けて実行されてしまう）
+
  case 1:
   echo '裏';
   break;
+
  default:　　　　　　　　　　  //case0,1いずれもあてはまらない場合にはdefaultのブロックが実行される
   echo 'エラー';
   break;
 }
+
+//配列
+※定義の仕方（インデックス番号0,1,2,...)
+$names = array('Mark', 'Joshua', 'Sarah');
+
+※配列の値の取り出し方
+echo $names[0];                //結果: Mark
+echo $names[1];                //結果: Joshua
+
+※値の追加、上書き
+$names = array('Mark', 'Joshua', 'Sarah');
+$names[] = 'Dan';              //配列の末尾に値を追加
+echo $names[3];                //結果: Dan
+$names[1] = 'Fred';            //値の上書き（[1]を'Joshua' → 'Fred'へ）
+echo $names[1];                //結果: Fred
 
