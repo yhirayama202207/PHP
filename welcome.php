@@ -182,3 +182,15 @@ if (!($x == 20)) {
  echo '$xは20ではない';
 }                              //結果: $xは20ではない
 
+//switch文（if, elseifによる分岐が多く複雑な場合、switch文で書き換えるとシンプルで読みやすいコードにできる）
+switch ($coin) {
+ case 0:
+  echo '表';
+  break;
+ case 1:
+  echo '裏';
+  break;
+ default:
+  echo 'エラー';
+  break;
+}
