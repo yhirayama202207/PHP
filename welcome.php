@@ -186,11 +186,12 @@ if (!($x == 20)) {
 switch ($coin) {
  case 0:
   echo '表';
-  break;
+  break;            　　　　　 //caseブロックの最後にはbreak命令を指定する。（break命令がないと後ろに続くcaseブロックが続けて実行されてしまう）
  case 1:
   echo '裏';
   break;
- default:
+ default:　　　　　　　　　　  //case0,1いずれもあてはまらない場合にはdefaultのブロックが実行される
   echo 'エラー';
   break;
 }
+
