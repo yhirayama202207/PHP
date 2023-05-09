@@ -235,3 +235,19 @@ $user['hobby'] = 'games';      //$user['追加するキー'] = '追加する値'
  $scores['国語'] += 5;
  echo $scores['国語'];         //結果: 85
 ?>
+
+
+//繰り返し処理
+echo 1;
+echo 2;
+echo 3;
+.
+.
+.
+echo 100;
+
+↓ for文を使用すると数行に短縮できる
+
+for ($i = 1; $i <= 100; $i ++){
+ echo $i;
+}
